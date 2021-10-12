@@ -4,16 +4,57 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&family=Rubik:wght@300;400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
         <title>WeatheRash</title>
     </head>
     <body>
         <h1>WeatheRash</h1>
         <main>
+            <div class="city-search-container">
+                <label for="txtCity">Weather of </label>
+                <div class="city-search">
+                    <input
+                        type="text"
+                        name="txtCity"
+                        id="txtCity"
+                        required
+                    />
+                    <span class="placeholder-plus">San Pedro Sula</span>
+                    <!-- <div class="cities-container"> -->
+                        <ul id="lstCities" class="cities">
+                            <!-- <li class="city-item">
+                                <span class="city-item__city-name city-name">
+                                    HN, San Pedro Sula
+                                </span>
+                                <br>
+                                <span class="city-item__city-coords city-coords">
+                                    Lat.: 85.25255, Lon: -50.25160
+                                </span>
+                            </li>
+                            <li class="city-item">
+                                <span class="city-item__city-name city-name">
+                                    HN, San Pedro Sula
+                                </span>
+                                <br>
+                                <span class="city-item__city-coords city-coords">
+                                    Lat.: 85.25255, Lon: -50.25160
+                                </span>
+                            </li> -->
+                            
+                        </ul>
+                    <!-- </div> -->
+                </div>
+            </div>
             <section class="weather-container">
                 <div id="temp" class="current-temp"></div>
                 <div id="feel" class="current-feel"></div>
             </section>
-
         </main>
         <script src="index.js" type="module"></script>
     </body>
